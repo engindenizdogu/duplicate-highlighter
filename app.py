@@ -7,10 +7,9 @@ FUNCTION_WORDS = {
 	"are", "was", "were", "am", "not", "no", "do", "does", "did", "so",
 	"if", "then", "than", "too", "very", "can", "will", "just", "you", "i",
     "he", "she", "they", "them", "his", "her", "their", "them", "we", "us", 
-    "our", "ours", "we're", "we've", "we'll", "we'd", "we're", "we've", "we'll", "we'd",
-    ".", ",", "!", "?", ":", ";", "-"
+    "our", "ours",
+	".", ",", "!", "?", ":", ";", "-"
 }
-
 
 def highlight_duplicates(text_widget: tk.Text) -> None:
 	# Remove previous highlights
@@ -21,7 +20,7 @@ def highlight_duplicates(text_widget: tk.Text) -> None:
 		return
 	# Find tokens that include: words possibly interleaved with punctuation (e.g., e.g., i.e., word---word)
 	# and standalone punctuation runs (e.g., --- ,,, !!!) so these can also be matched as substrings
-	words = re.findall(r"[A-Za-z0-9_]+(?:[.,;:!?\-]+[A-Za-z0-9_]+)*|[.,;:!?\-]+", text, flags=re.IGNORECASE)
+	words = re.findall(r"[A-Za-z0-9_']+(?:[.,;:!?\-]+[A-Za-z0-9_']+)*|[.,;:!?\-]+", text, flags=re.IGNORECASE)
 	if not words:
 		return
 	# Work with unique lowercase words excluding stopwords
