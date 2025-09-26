@@ -2,6 +2,17 @@
 
 A simple Python GUI application that automatically highlights duplicate words in text as you type. Built with Tkinter, this tool helps identify repetitive language and improve writing quality.
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="Screenshot-1.png" width="600" alt="Main screenshot of the Duplicate Highlighter application">
+    </td>
+    <td align="center">
+      <img src="Screenshot-2.png" width="225" alt="Smaller screenshot showing the highlighted text">
+    </td>
+  </tr>
+</table>
+
 ## Features
 
 - **Real-time highlighting**: Duplicate words are highlighted instantly as you type
