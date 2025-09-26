@@ -27,10 +27,6 @@ A simple Python GUI application that automatically highlights duplicate words in
 - **Creative writing**: Avoid repetitive vocabulary in stories and novels
 - **General text analysis**: Quickly identify patterns in any written content
 
-## Screenshots
-
-The application features a clean text editor with duplicate words highlighted in light green (#8cf5b7).
-
 ## Installation
 
 ### Prerequisites
